@@ -16,46 +16,26 @@
 html,body{
   width:100%;
   height:100%;
-  background:#2f2f2f;
   overflow:hidden;
-  display:flex;
-  justify-content:center;
-  align-items:center;
+  background:#2f2f2f;
 }
 
-/* CENTER PDF */
 .pdf-container{
   width:100%;
   height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
 }
 
-/* PDF */
-.pdf-container iframe{
+/* FULL PDF VIEW */
+.pdf-container embed{
   width:100%;
   height:100%;
-  border:none;
 }
 
-/* MOBILE ANDROID */
+/* MOBILE */
 @media(max-width:768px){
 
-  html,body{
-    overflow:hidden;
-  }
-
   .pdf-container{
-    width:100%;
     height:100vh;
-    justify-content:center;
-    align-items:center;
-  }
-
-  .pdf-container iframe{
-    width:100%;
-    height:100%;
   }
 
 }
@@ -67,10 +47,10 @@ html,body{
 
 <div class="pdf-container">
 
-  <!-- PDF AUTO OPENS -->
-  <iframe
-    src="NOC26MG77S11502026090422518.pdf#view=FitH&toolbar=1&navpanes=1&scrollbar=1">
-  </iframe>
+  <!-- AUTO OPEN PDF -->
+  <embed
+    src="NOC26MG77S11502026090422518.pdf#toolbar=1&navpanes=1&scrollbar=1&view=FitH"
+    type="application/pdf">
 
 </div>
 
